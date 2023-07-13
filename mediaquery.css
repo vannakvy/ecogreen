@@ -1,0 +1,171 @@
+/* Tablet Screen: 768px */
+@media only screen and (min-width: 768px) {
+    /* body {
+        background-color: aliceblue;
+    } */
+
+    .logo {
+        flex-basis: 25%;
+    }
+
+    .info {
+        padding: 0 2.5rem;
+        flex-basis: 75%;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* .icon {
+
+    } */
+
+
+    .nav_box {
+        flex-basis: 75%;
+        justify-content: flex-end;
+    }
+    .donate {
+        flex-basis: 25%;
+    }
+
+    .overlay {
+        padding: 1% 15%;
+    }
+
+    .project {
+        flex-direction: row;
+        height: 325px;
+    }
+
+    .project-image {
+        height: 100%;
+        flex-basis: 50%;
+    }
+
+    .project-image img {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .tree {
+        display: block;
+        flex-basis: 40%;
+    }
+
+    .volunteer {
+        display: flex;
+    }
+
+    .about {
+        flex-basis: 60%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .methods {
+        /* flex-grow: 1; */
+
+        align-items: center;
+    }
+
+    footer {
+        height: 200px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .company {
+        padding-left: 2rem;
+    }
+
+}
+
+
+
+
+
+/* Laptop Screen: 1000px */
+@media only screen and (min-width: 1200px) {
+    /* body {
+        background-color: brown;
+    } */
+    header {
+        padding: 1rem 10rem;
+    }
+
+    .navigation {
+        flex-direction: row-reverse;
+    }
+
+    .nav_box {
+        /* padding-left: 5; */
+        justify-content: flex-start;
+        padding-left: 7rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #nav_show {
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    #nav_show ul {
+
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        
+        flex-basis: 100%;
+    }
+
+    #nav_show ul li {
+        text-align: center;
+        flex-basis: 15%;
+    }
+
+    #nav_show ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    .overlay {
+        padding: 5% 30%;
+    }
+
+    .section-title {
+        flex-basis: 100%;
+    }
+
+    .campaigns {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        flex-basis: 45%;
+        flex-grow: 1;
+        height: 350px;
+        margin: 1rem;
+    }
+
+    .project:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .project:nth-child(odd) img {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .tree {
+        flex-basis: 50%;
+    }
+    .about {
+        flex-basis: 50%;
+    }
+
+}

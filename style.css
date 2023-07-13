@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: darkcyan;
+    font-family: 'Nunito', sans-serif;
+}
+
+button, label, input, select {
+    font-family: 'Nunito', sans-serif;
+    background-color: darkcyan;
+    color: whitesmoke;
+    border: none;
+}
+
+.logo_text {
+    color: #198754;
+}
+
+.eco {
+    color: white;
+}
+
+.logo h6 {
+    color: lightgray;
+}
+
+.logo:hover .eco{
+    color: #198754;
+}
+
+.info_text p:first-child{
+    color: #198754;
+    font-weight: bold;
+}
+
+.info_text p:last-child {
+    color: white;
+}
+
+
+
+header {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #2C3333; */
+    /* background-color: #343140; */
+    background-color: #212529;
+}
+
+.logo {
+    margin-right: auto;
+    padding: .6rem;
+    flex-basis: 40%;
+}
+
+.info {
+    flex-basis: 100%;
+
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top_icon {
+    font-size: 32px;
+    padding: .6rem;
+    color: #198754;
+    flex: 0 0 auto;
+    
+
+    /* flex: 1 0 30%; */
+}
+
+.info_text {
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+
+#nav_show {
+    display: none;
+}
+
+
+.navigation {
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.donate,
+.nav_box {
+    height: 75px;
+    flex-basis: 50%;
+    /* flex: 1 0 50%; */
+    /* flex-grow: 1; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+
+.nav_box {
+    padding: 0 2rem;
+    background-color: #198754;
+}
+
+.menu {
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+
+.banner {
+    height: 600px;
+    background-image: url('images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    background-color: rgba(0,0,0, 0.5);
+    height: 100%;
+    text-align: center;
+    
+    color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+.overlay>* {
+    margin-bottom: 2rem;
+}
+
+.curve {
+    font-size: 1.6rem;
+    background-color: rgb(33, 79, 125);
+    padding: 0.5rem 2rem;
+    border-radius: 3rem 0 3rem 0;
+}
+
+.slogan {
+    font-size: 4.8rem;
+    letter-spacing: 2px;
+}
+
+.quote {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #198754;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.arrow {
+    transition: 100ms;
+}
+
+.btn:hover .arrow {
+    /* background-color: #212529; */
+    margin-left: 1rem;
+}
+
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.btn-sm {
+    padding: .6rem 1rem;
+    font-size: 1.4rem;
+    align-self: flex-start;
+}
+
+
+
+.category {
+    background-color: rgba(25, 135, 84, 0.25);
+    color: #198754;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-weight: 900;
+}
+
+.project-title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.project-desc {
+    font-size: 1.4rem;
+    color: dimgray;
+}
+
+.progressbar {
+    background-color: lightgray;
+    border-radius: 1rem;
+    height: 2rem;
+}
+
+.progress-value {
+    background-color: #198754;
+    width: 70%;
+    height: 2rem;
+    padding-top: .4rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.number {
+    color: #198754;
+    font-weight: 500;
+}
+
+.donation {
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.project-image {
+    height: 50%;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1rem 2rem;
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project {
+    width: 90%;
+    height: 600px;
+    border-radius: 1rem;
+    border: 2px solid whitesmoke;
+    background-color: lavenderblush;
+    margin-bottom: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.campaigns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.an-icon {
+    font-size: 4rem;
+    padding: 1.5rem;
+    color: #198754;
+    background-color: rgba(25, 135, 84, 0.25);
+    border-radius: 0 50% 50% 50%;
+
+    
+}
+
+.a-method {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #212529;
+    background-color: whitesmoke;
+    text-align: center;
+    height: 175px;
+    padding: 1rem;
+
+    flex-basis: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.a-method:hover .an-icon {
+    background-color: #198754;
+    color: white
+
+}
+
+.methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.tree {
+    width: 50%;
+    height: 500px;
+}
+
+.tree img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.tree {
+    display: none;
+}
+
+.about>p,
+.about h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+    color: #198754;
+    padding: 1rem;
+}
+
+
+
+.about h2 {
+    font-size: 3.6rem;
+}
+
+.about {
+    padding-left: 2rem;
+    background-color: lavenderblush;
+}
+
+
+
+footer {
+    height: 300px;
+    background-color: #212529;
+    /* padding-top: 2rem; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer div {
+    /* height: 200px; */
+    flex-basis: 30%;
+}
+
+.about-company {
+    flex-grow: 1;
+    padding: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.social {
+    width: 100%;
+    /* background-color: aliceblue; */
+
+    /* align-self: center; */
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.social ion-icon {
+    font-size: 3rem;
+    color: #198754;
+
+    flex-basis: 15%;
+}
+/* 
+.company {
+    align-self: center;
+} */
